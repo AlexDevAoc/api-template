@@ -15,6 +15,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       autoLoadEntities: true,
+      ssl: (process.env.DB_SSL == 'true') ? true : false,
       synchronize: (process.env.SYNCHRONIZE == 'true') ? true : false
     }),
 
