@@ -19,8 +19,8 @@ async function bootstrap() {
   app.enableCors();
 
   const config = new DocumentBuilder()
-    .setTitle('API Documentation')
-    .setDescription('API description')
+    .setTitle('API Template')
+    .setDescription('Template for NestJS API projects')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
